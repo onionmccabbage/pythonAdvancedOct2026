@@ -25,3 +25,6 @@ if __name__ == '__main__':
     # next we use our squareIt function to map across a collection of values
     squares = tuple( map(squareIt, d) ) # make a tuple from the results of the map object
     print(squares)
+    # we are not restricted by any quantity of data (other than the machine capabilites)
+    biggy = range(-10**6, 10**6, 1000)
+    lotsOResults = filter(isEven, map(squareIt, biggy))
