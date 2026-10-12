@@ -3,7 +3,7 @@ from my_concrete import Shape
 
 # unless we say otherwise, every class inherits from 'object'
 class Figure(Shape):
-    '''Figure inheirsts from Shape but adds a name property'''
+    '''Figure inherits from Shape but adds a name property'''
     def __init__(self, sides=4, colour='blue', name='default'):
         super().__init__(sides, colour) # this calls the __init__ of the parent class
         self.__name = name

@@ -23,4 +23,12 @@ class AbstractShape(metaclass=ABCMeta):
 
 
 
+# we only want to exercise this code when this module is run directly
+# (do not run the following if this module has been imported elsewhere)
+if __name__ == '__main__':
+    # what is the name of this module
+    # we can always access the inbuilt name of any module
+    print(f'This module is currently known as {__name__}')
+
+
 

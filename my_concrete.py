@@ -30,7 +30,9 @@ class Shape(AbstractShape):
         else:
             self.__colour = 'blue' # we choose to set a sensible default
 
+
 if __name__ == '__main__':
+    print(f'This module is currently known as {__name__}')
     # we may make instances of our class
     s1 = Shape(4, 'blue')
     s2 = Shape() # a blue 4-sided shape
