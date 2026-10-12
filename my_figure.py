@@ -31,6 +31,8 @@ if __name__ =='__main__':
     print(f1.colour, f1.name)
     # we may access class properties like this
     print(Figure.num_instances)
+    # print will inherit from Shape
+    print(f2)
 
 
 
