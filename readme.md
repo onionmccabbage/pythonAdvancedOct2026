@@ -17,9 +17,9 @@ Toby Dussek
 * 3:00 break (15 minutes)
 * 4:30 end
 
-Course Repo https://github.com/onionmccabbage/pythonAdvancedOctober2026
+Course Repo 
 
-### Monday
+#### Monday
 * intro and welcome
   - what you currently know
   - what you want to know 
@@ -32,13 +32,12 @@ Course Repo https://github.com/onionmccabbage/pythonAdvancedOctober2026
 * validate data types: isinstance, type, int(float())
 * override built-in methods: __str__, __repr__, __eq__ etc.
 * if __name__== '__main__'
-* how to load a relative file path
 * using sys.path
 * after lunch review: build class(es) with properties and methods
 * functional programming: map, filter and reduce  
 * function parameters: args, kwargs
 
-Tuesday
+#### Tuesday
 * how to accessing the recordings
 * loading remote API data (requests)
   - pip install request   # or pip3 install requests
@@ -56,7 +55,7 @@ Tuesday
 * read and nicely format values from the db
 * after lunch review exercise
 
-Wednesday
+#### Wednesday
 * comprehensions, generators and yield
 * i/o bound: any program which relies on external assets (print, input....)
 * python includes stdin and stdout
@@ -72,7 +71,7 @@ Wednesday
 * Flask is a lightweight web server
   - django is a full-fat web server
 
-Thursday
+#### Thursday
 * classes include several really useful methods we may override:
   `__init__`, `__str__`, `__repr__`, `__enter__`, `__exit__`, `__run__`, `__call__`
 * multithreading, also limits of mutlithreading concurrency
