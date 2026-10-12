@@ -17,7 +17,7 @@ Toby Dussek
 * 3:00 break (15 minutes)
 * 4:30 end
 
-Course Repo 
+Course Repo https://github.com/onionmccabbage/pythonAdvancedOct2026
 
 #### Monday
 * intro and welcome
