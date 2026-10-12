@@ -34,8 +34,8 @@ Course Repo https://github.com/onionmccabbage/pythonAdvancedOct2026
 * if __name__== '__main__'
 * using sys.path
 * after lunch review: build class(es) with properties and methods
-* functional programming: map, filter and reduce  
 * function parameters: args, kwargs
+* functional programming: map, filter and reduce  
 
 #### Tuesday
 * how to accessing the recordings
