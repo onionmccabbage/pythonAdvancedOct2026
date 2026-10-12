@@ -6,6 +6,8 @@ def writeBytes(b): # we would be better off checking that b is actually bytes
     '''commit the byte data 'b' to a persistent (byte) file'''
     try:
         # we need a file system access object
+        # 'x' for exclusive access (throws exception if file exists)
+        # 'w' will (over)wrtie the file each time
         with open('my_bytes', 'ab') as fout: # 'ab' refers to append bytes
             fout.write(b)
             # when the with operator ends, it will automatically release resources
@@ -16,7 +18,7 @@ def writeBytes(b): # we would be better off checking that b is actually bytes
 if __name__ == '__main__':
     myBytes = b'Here is a byte string' # the b makes this into bytes
     print(type(myBytes)) # we have bytes
-    writeBytes(myBytes)  # call our function
+    # writeBytes(myBytes)  # call our function
     # other ways to create byte data
     c = bytes('wordy wordy word', 'UTF8')
     writeBytes(c)
@@ -26,4 +28,4 @@ if __name__ == '__main__':
         d += bytes(_)
     print(d.decode()) # nb there is also an encode() method
     # send them to the byte file
-    writeBytes(d)
+    # writeBytes(d)
