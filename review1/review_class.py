@@ -9,7 +9,7 @@ class NumberFun(ABCReview):
         self.n = num # use the setter method
     def __str__(self):
         return f'''The {self.findEvenOdd()} number {self.n} squared is {self.findSquare()}
-and the square root of {self.n} is {self.findSqrt()}
+and the square root of {self.n} is {self.findSqrt()} (roughly {self.findSqrt():0.2f})
 It is {self.findIfSquareNum()}''' # use the accessors
     def findSquare(self):
         return self.__n ** 2
