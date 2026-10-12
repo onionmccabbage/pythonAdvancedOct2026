@@ -29,6 +29,14 @@ class Shape(AbstractShape):
             self.__colour = new_colour
         else:
             self.__colour = 'blue' # we choose to set a sensible default
+    # we may write our own 'print' method by overriding the built in __str__
+    def __str__(self):
+        '''This method will be called whenever we use 'print' on an instance'''
+        return f'This {self.colour} shape has {self.num_sides} sides.'
+    def __repr__(self):
+        '''This method will only be called in immediate-mode Python
+        It represents the instance'''
+        return f'This {self.num_sides}-sided shape is {self.colour}'
 
 
 if __name__ == '__main__':
@@ -39,4 +47,5 @@ if __name__ == '__main__':
     s3 = Shape(6) # default to blue
     # s1.num_sides = '4' # this calls the num_sides property setter (with validation)
     print(s3, s3.colour, s3.num_sides) # here we call the getter methods
+    print(s1, s2, s3)
 
