@@ -1,4 +1,4 @@
-### Advanced Python Review 2
+### Advanced Python Review 2 (1hr 5min until 2:30)
 
 This is an opportunity to work with databases
 
@@ -6,7 +6,8 @@ In a new package, write a module to implement a database table for 'posts'
 Use the following API to grab a very large number of 'posts':
   https://jsonplaceholder.typicode.com/posts
 
-(or else use teh posts.json file provided)
+(or else use the posts.json file provided)
+Maybe use your own relevant data set
 
 ##### Details:
 
