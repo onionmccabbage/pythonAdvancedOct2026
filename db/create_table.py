@@ -10,7 +10,7 @@ def createTable():
     # we then need a cursor to work with the database
     curs = conn.cursor()
     # Next we write an SQL statement to create a table within this db
-    st = 'CREATE TABLE zoo (creature VARCHAR(32) PRIMARY KEY, count int, cost float)'
+    st = 'CREATE TABLE IF NOT EXISTS zoo (creature VARCHAR(32) PRIMARY KEY, count int, cost float)'
     # implement the sql on the db
     try:
         curs.execute(st) # at this point no changes will happen
