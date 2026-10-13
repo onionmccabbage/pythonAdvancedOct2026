@@ -39,6 +39,9 @@ Course Repo https://github.com/onionmccabbage/pythonAdvancedOct2026
 
 #### Tuesday
 * how to accessing the recordings
+  - https://learn.neueda.com/course/457328
+  - Sign up with an email and password
+  - when asked, enter code MHMZOD
 * loading remote API data (requests)
   - pip install request   # or pip3 install requests
 * persisting files: read/write/append/exclusive/overwrite, text, bytes, json

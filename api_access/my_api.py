@@ -1,6 +1,6 @@
 # We may request external data from a REST API
 
-import requests
+import requests # may need to pip install requests
 
 def getJSON():
     '''retrieve JSON data as Python structures'''
