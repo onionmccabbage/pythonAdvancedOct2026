@@ -1,4 +1,4 @@
-### Advanced Python Review 2 (1hr 5min until 2:30)
+### Advanced Python Review 2 (1hr 15min until 2:40)
 
 This is an opportunity to work with databases
 
