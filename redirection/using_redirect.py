@@ -15,6 +15,12 @@ class RedircetOut():
 
 if __name__ == '__main__':
     # sys exposes some standard streams
-    print( sys.stdout ) # a standard output stream: (over)write UTF-8
-    print( sys.stdin )  # a standard input stream: read UTF-8
-    print( sys.stderr )
+    # print( sys.stdout ) # a standard output stream: (over)write UTF-8
+    # print( sys.stdin )  # a standard input stream: read UTF-8
+    # print( sys.stderr )
+    with open('my_log.txt', 'at') as fout: # here we will append to a text file
+        r = RedircetOut(fout) # send our output stream to the class __init__ method
+        with r:
+            print('This content will be redirected by the __enter__ method')
+        # the __exit__ method should return the standrad output to be the console
+        print('what about this?')
