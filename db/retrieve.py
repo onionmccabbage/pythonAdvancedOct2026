@@ -1,9 +1,11 @@
 import sqlite3
+from make_connection import makeConnection
 
 def retrieve():
     '''retrieve all items from the db table'''
-    conn = sqlite3.connect('my_db')
-    curs = conn.cursor()
+    d = makeConnection()
+    conn = d['conn'] # d[0] if its a tuple
+    curs = d['curs']
     # using * will select every field in the table
     st = 'SELECT * FROM zoo'
     try:
