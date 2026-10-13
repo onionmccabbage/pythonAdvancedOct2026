@@ -8,10 +8,11 @@ def retrieve():
     st = 'SELECT * FROM zoo'
     try:
         curs.execute(st)
-        conn.commit()    # we always commit, even if we make no changes to the db
+        # conn.commit() # if there is no change to the db we don't need to commit
         # we can now retrieve any values retured from the db
         rows = curs.fetchall() # retrieve zero or more results from the table
         conn.close()
+        return rows
     except Exception as err:
         print(err)
 
