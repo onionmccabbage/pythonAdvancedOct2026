@@ -78,6 +78,7 @@ Course Repo https://github.com/onionmccabbage/pythonAdvancedOct2026
 * classes include several really useful methods we may override:
   `__init__`, `__str__`, `__repr__`, `__enter__`, `__exit__`, `__run__`, `__call__`
 * multithreading, also limits of mutlithreading concurrency
+  * question: do __exit__ codes change with threading?
 * class and function threads
   - how threads are done
 * concurrency and resources (lock shared resources)
