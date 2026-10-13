@@ -13,7 +13,7 @@ def retrieve():
         curs.execute(st)
         # conn.commit() # if there is no change to the db we don't need to commit
         # we can now retrieve any values retured from the db
-        rows = curs.fetchAll() # retrieve zero or more results from the table
+        rows = curs.fetchall() # retrieve zero or more results from the table
         conn.close()
         return rows
     except Exception as err:

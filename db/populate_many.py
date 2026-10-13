@@ -34,13 +34,13 @@ def populateMany():
             print(err)
     conn.close()
 
+creature_tuple = ( # normally this data would come from an API, a file, a microservice etc.
+    {'creature':'Albatros', 'count':1,   'cost':120.99},
+    {'creature':'Bear',     'count':5,   'cost':120.99},
+    {'creature':'Carp',     'count':120, 'cost':120.99},
+    {'creature':'Deer',     'count':32,  'cost':120.99},
+    {'creature':'Elk',      'count':7,   'cost':120.99},
+)
 if __name__ == '__main__':
-    creature_tuple = ( # normally this data would come from an API, a file, a microservice etc.
-        {'creature':'Albatros', 'count':1,   'cost':120.99},
-        {'creature':'Bear',     'count':5,   'cost':120.99},
-        {'creature':'Carp',     'count':120, 'cost':120.99},
-        {'creature':'Deer',     'count':32,  'cost':120.99},
-        {'creature':'Elk',      'count':7,   'cost':120.99},
-    )
     # run our function
     populateMany()

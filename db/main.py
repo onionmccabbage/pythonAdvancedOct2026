@@ -24,7 +24,7 @@ def main():
     else:
         raise TypeError('Option must be numeric')
     # act upon the options
-    match option: # we may use match-case from Python 3.10 onwards
+    match optnum: # we may use match-case from Python 3.10 onwards
         case 1:
             createTable()
         case 2:
@@ -32,7 +32,8 @@ def main():
         case 3:
             populateMany()
         case 4:
-            retrieve()
+            a = retrieve() # we actually retrieve from the db
+            print(a)
         case _:
             raise TypeError(f'Option must be {optlimits}')
 
