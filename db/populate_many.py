@@ -8,10 +8,26 @@ def populateMany():
     conn = d['conn'] # d[0] if its a tuple
     curs = d['curs']
     # here we use ? to stand in for each item value
+    # suppose one of the ? was '0 where 0=0 drop table'
     st = 'INSERT INTO zoo VALUES (?, ?, ?)'
     for item in creature_tuple:
         try:
             # using sql '?' lets us validate each member against SQL attacks
+            creature = item['creature']
+            if type(creature)==str and creature != '':
+                pass
+            else:
+                raise TypeError('Creature name must be a non-empty sting')
+            count = item['count']
+            if type(count) == int and count >=0:
+                pass
+            else:
+                raise TypeError('Creature count must be a positive integer')
+
+
+
+
+
             curs.execute(st, (item['creature'], item['count'], item['cost']) )
             conn.commit() # we commit each change in turn
         except Exception as err:
