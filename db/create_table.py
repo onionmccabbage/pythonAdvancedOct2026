@@ -2,13 +2,13 @@
 # The principles are the same for any db engine
 
 import sqlite3
+from make_connection import makeConnection
 
 def createTable():
     '''Create or open a database then make a table inside it'''
-    # we need a connection to a db. This is I/O bound
-    conn = sqlite3.connect('my_db') # if it doesnt exist it will be created. If it already exists conn will connect to it
-    # we then need a cursor to work with the database
-    curs = conn.cursor()
+    d = makeConnection()
+    conn = d['conn'] # d[0] if its a tuple
+    curs = d['curs']
     # Next we write an SQL statement to create a table within this db
     st = 'CREATE TABLE IF NOT EXISTS zoo (creature VARCHAR(32) PRIMARY KEY, count int, cost float)'
     # implement the sql on the db

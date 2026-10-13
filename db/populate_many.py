@@ -1,10 +1,12 @@
 # here we will place several more reates into the db table
 
 import sqlite3
+from make_connection import makeConnection
 
 def populateMany():
-    conn = sqlite3.connect('my_db')
-    curs = conn.curs()
+    d = makeConnection()
+    conn = d['conn'] # d[0] if its a tuple
+    curs = d['curs']
     # here we use ? to stand in for each item value
     st = 'INSERT INTO zoo VALUES (?, ?, ?)'
     for item in creature_tuple:
