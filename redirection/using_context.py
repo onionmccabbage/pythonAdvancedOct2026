@@ -18,6 +18,7 @@ if __name__ == '__main__':
     '''exercise the code'''
     with open('my_stream.txt', 'w') as fileObj:
         with outputRedirect(fileObj): # here we call our context manager function
-            print('content to be redirected')
-            sys.stdout('where does this go?')
+            print('content to be redirected') # print always defaults to new-line
+            sys.stdout.write('where does this go?') # no default new-line
     print('normal service is resumed')
+    sys.stderr.write('oh no, this is a pretend error') # we may choose to redirect stderr 
