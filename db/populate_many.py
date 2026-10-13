@@ -23,12 +23,12 @@ def populateMany():
                 pass
             else:
                 raise TypeError('Creature count must be a positive integer')
-
-
-
-
-
-            curs.execute(st, (item['creature'], item['count'], item['cost']) )
+            cost = item['cost']
+            if type(cost) in (int, float) and cost >=0:
+                pass
+            else:
+                raise TypeError('Creature cost must be a positive number')           
+            curs.execute(st, (creature, count, cost) )
             conn.commit() # we commit each change in turn
         except Exception as err:
             print(err)
