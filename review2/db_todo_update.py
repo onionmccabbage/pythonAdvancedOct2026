@@ -12,7 +12,7 @@ def main():
     UPDATE todos
     SET completed = true
     WHERE id IS {};
-    '''.format(t) 
+    '''.format(t) # an alternative syntax for string formatting
     try:
         curs.execute(st)
         conn.commit()
