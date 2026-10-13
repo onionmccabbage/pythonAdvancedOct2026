@@ -23,5 +23,6 @@ def updateData(w):
         print(err)
 
 if __name__ == '__main__':
+    # we could ask the user, or use sys.argv, or other means for the new data
     whichItem = {'creature':'Penguin', 'count':58}
     updateData(whichItem)
