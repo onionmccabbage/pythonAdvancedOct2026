@@ -6,7 +6,7 @@ class RedircetOut():
     def __init__(self, new_stream): # we can pass in teh target output stream (e.g. file writer)
         self.new_stream = new_stream
     def __enter__(self):
-        '''swap the original stream for this new one (and stroe a reference to the original)'''
+        '''swap the original stream for this new one (and store a reference to the original)'''
         self.old_stream = sys.stdout # remember what the current output stream is
         sys.stdout = self.new_stream # set the standard output to use our output stream
     def __exit__(self, exc_type, exc, tb):
