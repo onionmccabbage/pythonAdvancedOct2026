@@ -35,7 +35,9 @@ def main():
     @app.route('/person/<person>')
     def person(person='Ethel'):
         '''retrieve any URL parameter and use it in the returned data'''
-        return f'Parameter is {person}'
+        # return f'Parameter is {person}'
+        # we need to pass in any arguments to the page
+        return render_template('person+page.html', person=person)
 
 
     app.run() # our server begins listening
