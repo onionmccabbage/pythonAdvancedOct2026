@@ -82,7 +82,7 @@ Course Repo https://github.com/onionmccabbage/pythonAdvancedOct2026
 * class and function threads
   - how threads are done
 * concurrency and resources (lock shared resources)
-* async and await
+* async and await and threaded microservices
 * in Python we do not get true parallelism ...
   - the global Interpreter Lock (GIL)
   - Python 3.13+ contains an optional GIL
