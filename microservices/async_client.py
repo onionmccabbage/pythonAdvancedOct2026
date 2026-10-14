@@ -6,6 +6,7 @@ import sys
 # Howver in mucroservices they often need to be
 async def myClient(message='default'):
     reader, writer = await asyncio.open_connection('localhost', 9876)
+    # the client could read data from file/DB/http etc then pass it along
     print('sending a message')
     writer.write(message.encode())
     await writer.drain() # wait for teh message stream to exhaust
