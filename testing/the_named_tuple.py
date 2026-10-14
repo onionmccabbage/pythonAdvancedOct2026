@@ -19,8 +19,6 @@ def makeTaskTup( tup=tuple() ):
     t = task(*tup)
     return t
 
-
-
 if __name__ == '__main__':
     # we may create instances of our Task
     tX = Task('Learn Python', 'Oenid', False, 32)
@@ -28,3 +26,6 @@ if __name__ == '__main__':
     # Explore the defaults
     tD = Task() # use the default values
     print(tD)
+    # can we skip defaults - only by specifying keyword arguments
+    tZ = Task(summary='can we do this', id=32)
+    print(tZ)
