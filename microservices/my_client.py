@@ -8,7 +8,7 @@ def client():
     client.connect(port_tuple)
     print(f'Client is running on {port_tuple[0]} port {port_tuple[1]}')
     # we may send a request to any server that is listening on this port
-    client.send('hello'.encode()) # all communication must be encoded
+    client.send('quit'.encode()) # all communication must be encoded
     # when done, we tidy up
     client.close()
 
