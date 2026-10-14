@@ -1,5 +1,5 @@
 # We may request external data from a REST API
-
+from yield_example import makeDateTimeStamp
 import requests # may need to pip install requests
 
 def getJSON():
@@ -11,7 +11,10 @@ def getJSON():
     return data
 
 if __name__ == '__main__':
+    ts = makeDateTimeStamp()
+    print(f'Started at {ts.__next__()}')
     d = getJSON()
+    print(f'Completetd at {ts.__next__()}')
     print(d, type(d))
 
 
