@@ -7,6 +7,7 @@ def server():
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     port_tuple = ('localhost', 9876)
     server.bind(port_tuple) # our server now has a port over IP4
+    print(f'Server is running on {port_tuple[0]} port {port_tuple[1]}')
     # we need to begin listening for client requests
     server.listen() 
     while True: # this is an endless loop (a run-loop)
