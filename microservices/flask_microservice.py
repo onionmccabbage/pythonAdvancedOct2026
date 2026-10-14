@@ -1,5 +1,6 @@
 # pythpn -m pip install flask
 from flask import Flask # may neem to pip install flask
+from flask import render_template # this lets us build HTML content
 from yield_example import makeDateTimeStamp
 from my_api import getJSON
 # flask is a microservice for serving content over http
@@ -30,6 +31,7 @@ def main():
         response = f'<h3>Data goes here</h3>{part}'
         return response
     # we may need to make use of URL parameters
+    @app.route('/person') # with no arguments
     @app.route('/person/<person>')
     def person(person='Ethel'):
         '''retrieve any URL parameter and use it in the returned data'''
