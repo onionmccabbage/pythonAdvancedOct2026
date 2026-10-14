@@ -73,6 +73,7 @@ Course Repo https://github.com/onionmccabbage/pythonAdvancedOct2026
 * after lunch lab exercise
 * Flask is a lightweight web server
   - django is a full-fat web server
+  - see https://www.tangowithdjango.com/
 
 #### Thursday
 * classes include several really useful methods we may override:
@@ -102,7 +103,6 @@ Course Repo https://github.com/onionmccabbage/pythonAdvancedOct2026
   - design patterns
   - extend threading and also multiprocessing
   - Numpy, Pandas and Data Analysis (jupyter)
-
 where to go from here:
 * use Python regularly
 * work through the tutorials and exercises learnpython.org and pynative.com
