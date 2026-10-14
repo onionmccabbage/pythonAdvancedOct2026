@@ -10,7 +10,7 @@ def client():
     print(f'Client is running on {port_tuple[0]} port {port_tuple[1]}')
     # we may send a request to any server that is listening on this port
     # check if there are additional system arguments
-    if len(sys.arv)>1:
+    if len(sys.argv)>1:
         # all sys.argv members are string
         msg = ( ' '.join(sys.argv[1:]) ).encode()
     client.send(msg) # all communication must be encoded

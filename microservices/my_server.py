@@ -19,6 +19,8 @@ def server():
         print(f'Server received {buf}') # NB the buffer is url-encoded
         if buf == b'quit':
             break # this will end the while loop
+        else:
+            pass # we could do something with the info, or echo back to the client
 
 if __name__ == '__main__':
     server() # invoke the server
