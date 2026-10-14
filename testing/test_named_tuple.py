@@ -8,7 +8,12 @@ def test_members():
     # now we assert our tests
     assert t.summary == 'Finish doing stuff'
     assert t.owner   == 'Grace'
-    assert t.done    == False # does this work...
+    assert (t.done, t.id) == (False, None) # note when we imported Task it also got the default
+
+def testDefaults():
+    t = Task()
+    s = Task(None, None, False, None)
+    assert t==s
 
 if __name__ == '__main__':
     test_members() # here we invoke the tests
