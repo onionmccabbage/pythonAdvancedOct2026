@@ -1,0 +1,1 @@
+This content will be redirected by the __enter__ method
