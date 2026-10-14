@@ -1,6 +1,6 @@
 ### Review 3 
 
-##### 1hr 15mins
+##### 1hr 15mins until 2:25
 
 if you wish, use microservices, DB, API, i/o context etc. within your work
 
@@ -37,4 +37,4 @@ Further Options
 but context options could write to a text file or a byte file
 * Send context options in the client request to control how the server streams its output
 
-Around tea break there will be a chance to show you code
+There will be a chance to show you code
