@@ -37,7 +37,7 @@ class CodeRunnerDummy(Thread):
             self.lock.release() # at the earliest opportunity we release the shared lock
     def randomDelay(self):
         '''sleep for a random short period (emulate a long running thing)'''
-        time.sleep(random.randint(1,5)/4) # 0.25, 0.5, 0.75, 1
+        time.sleep(random.randint(1,5)/400) # 0.0025, 0.005, 0.0075, 0.01
     
 if __name__ == '__main__':
     '''exercise this module'''
@@ -45,11 +45,11 @@ if __name__ == '__main__':
 
     scripts = []
     # here is a bunch of 'scripts' - a resource for our thread class
-    for _ in range(0,64):
+    for _ in range(0,2056):
         s = {'id':_, 'kind':'Python'} # this stands in for our external scripts to be run
         scripts.append(s)
     # a bunch of threads to work on our scripts
-    num_threads = 8
+    num_threads = 512
     runners_list = []
     for _ in range(0, num_threads):
         runner = CodeRunnerDummy(_, lock) # pass the same lock instance to all threads
