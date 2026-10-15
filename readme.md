@@ -108,3 +108,4 @@ where to go from here:
 * work through the tutorials and exercises learnpython.org and pynative.com
 
 End of course feedback 
+https://apps.powerapps.com/play/17579985-153c-4727-b1f4-8b53e48b5e72?tenantId=92e84ceb-fbfd-47ab-be52-080c6b87953f&Type=ILT&ID=LZU1500681&OID=521845&Title=Advanced%20Programming%20in%20Python&Owner=Nitin%20Tiwari
