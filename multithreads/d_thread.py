@@ -11,10 +11,25 @@ class CodeRunnerDummy(Thread):
     def __init__(self, n):
         Thread().__init__()
         self.n = n
-    def run(self, ):
+        self.test_count = 0
+    def run(self):
         while True: # a run loop - our Thread will run endlessly .... until we break
-            break
+            '''if there are any scripts in the pool, take one and deal with it'''
+            if len(scripts)>0:
+                nextScript = scripts.pop() # grab the next available resource
+                # here we could carry out the script
+                self.randomDelay() # emulate a long runnig operation
+                self.test_count +=1
+            else:
+                '''if there are no more resources, then this thread can end'''
+                print(f'Script runner {self.n} completed {self.test_count} operations')
+                break
+    def randomDelay(self):
+        '''sleep for a random short period (emulate a long running thing)'''
+        time.sleep(random.randint(1,5)/4) # 0.25, 0.5, 0.75, 1
 
+
+    
 if __name__ == '__main__':
     '''exercise this module'''
     scripts = []
