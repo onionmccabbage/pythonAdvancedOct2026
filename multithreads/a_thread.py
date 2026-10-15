@@ -14,8 +14,8 @@ def fn(n):
 
 if __name__ == '__main__':
     '''we may execute any function as a threada of control'''
-    tA = Thread(target=fn, args=(1,) )
-    tB = Thread(target=fn, args=(2,) )
+    tA = Thread(target=fn, args=(1,) ) # we may also pass kwargs
+    tB = Thread(target=fn, kwargs={'n':2} ) # kwargs are always a dict
     tC = Thread(target=fn, args=(3,) )
     tD = Thread(target=fn, args=(4,) )
 

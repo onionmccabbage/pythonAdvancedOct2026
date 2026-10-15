@@ -9,6 +9,7 @@ class Figure(Shape):
 
     def __init__(self, sides=4, colour='blue', name='default'):
         super().__init__(sides, colour) # this calls the __init__ of the parent class
+        # Shape.__init__(sides, colour) # also works
         self.__name = name
         # each time we create an instance, we will increment the num_instances
         Figure.num_instances += 1
