@@ -9,7 +9,7 @@ class CodeRunnerDummy(Thread):
     '''This class illustrates the problem with resource access
     Here we pretend to execute code (e.g. tests, automation etc.)'''
     def __init__(self, n):
-        Thread().__init__()
+        Thread.__init__(self)
         self.n = n
         self.test_count = 0
     def run(self):
@@ -27,8 +27,6 @@ class CodeRunnerDummy(Thread):
     def randomDelay(self):
         '''sleep for a random short period (emulate a long running thing)'''
         time.sleep(random.randint(1,5)/4) # 0.25, 0.5, 0.75, 1
-
-
     
 if __name__ == '__main__':
     '''exercise this module'''
