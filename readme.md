@@ -77,7 +77,7 @@ Course Repo https://github.com/onionmccabbage/pythonAdvancedOct2026
 
 #### Thursday
 * classes include several really useful methods we may override:
-  `__init__`, `__str__`, `__repr__`, `__enter__`, `__exit__`, `__run__`, `__call__`
+  `__init__`, `__str__`, `__repr__`, `__enter__`, `__exit__`, `run`, `__call__`
 * question: techniques to measure how long things take
 * multithreading, also limits of mutlithreading concurrency
   * __exit__ codes see example
