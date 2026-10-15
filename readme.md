@@ -80,7 +80,7 @@ Course Repo https://github.com/onionmccabbage/pythonAdvancedOct2026
   `__init__`, `__str__`, `__repr__`, `__enter__`, `__exit__`, `__run__`, `__call__`
 * question: techniques to measure how long things take
 * multithreading, also limits of mutlithreading concurrency
-  * question: do __exit__ codes change with threading?
+  * __exit__ codes see example
 * class and function threads
   - how threads are done
 * concurrency and resources (lock shared resources)
