@@ -19,3 +19,17 @@ class MyClass(Thread): # when we inherit from Thread we MUST override the 'run' 
         for _ in range(0,4):
             print(f'{self.n} is sleeping') # try to avoid I/O bound operations in threads!
             time.sleep(random.random()*self.x)
+
+if __name__ == '__main__':
+    tA = MyClass('A', 1)
+    tB = MyClass('B', 2)
+    tC = MyClass('C', 0.5)
+    start = timeit.default_timer()
+    tA.start() # this invokes our run method
+    tB.start()
+    tC.start()
+    tA.join()
+    tB.join()
+    tC.join()
+    end = timeit.default_timer()
+    print(f'Total time: {end-start} seconds')
