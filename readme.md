@@ -94,11 +94,12 @@ Course Repo https://github.com/onionmccabbage/pythonAdvancedOct2026
   - (especially useful for threading and large code-base)
 * profiling: timings etc. (cProfile)
 * to use cProfile we write this:
-  -  python -m cProfile -o prof_out using_api.py
+  - python -m cProfile -o prof_out using_api.py
 * debug
 * after lunch review
 * async (Py3.12+) server and client for microservices
 * Numpy and Pandas are written in c so they avoid the GIL
+* thread events, custom decorator, using zip/deque
 * the next course covers:
   - design patterns
   - extend threading and also multiprocessing
