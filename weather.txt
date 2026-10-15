@@ -1,0 +1,7 @@
+The weather in Dublin is clear sky at 12.72C
+The weather in Genoa is few clouds at 23.01C
+The weather in Kingston is broken clouds at 29.45C
+The weather in London is broken clouds at 20.6C
+The weather in Athlone is overcast clouds at 12.86C
+The weather in Paris is clear sky at 23.81C
+The weather in Munich is scattered clouds at 19.75C
