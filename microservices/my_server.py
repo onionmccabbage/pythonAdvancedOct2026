@@ -9,7 +9,7 @@ def server():
     server.bind(port_tuple) # our server now has a port over IP4
     print(f'Server is running on {port_tuple[0]} port {port_tuple[1]}')
     # we need to begin listening for client requests
-    server.listen() # we may set a backlog, controlling concurrent client handling 
+    server.listen(4) # we may set a backlog, controlling concurrent client handling 
     while True: # this is an endless loop (a run-loop)
         # accept any request from clients
         (client, addr) = server.accept()
